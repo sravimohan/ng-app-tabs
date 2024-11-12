@@ -1,6 +1,9 @@
 # Angular Application Tabs Example
 
-This example demostrates the example of creating application level tabs by using RouteReuseStrategy
+This example demostrates the example of creating application level tabs by using RouteReuseStrategy.
+
+- Each tab is treated as a route
+- The tab state is maintained by implementing RouteReuseStrategy and persisting state in a signal store
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
 
