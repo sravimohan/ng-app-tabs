@@ -1,0 +1,25 @@
+<mat-toolbar class="container">
+  <div>
+    <button class="menu" mat-button [matMenuTriggerFor]="appMenu">Menu</button>
+    <mat-menu #appMenu="matMenu">
+      <button
+        mat-menu-item
+        (click)="onMenuClick('Address Form', 'address', AppFeature.Address)"
+      >
+        New Address tab
+      </button>
+      <button
+        mat-menu-item
+        (click)="onMenuClick('Table', 'table', AppFeature.Table)"
+      >
+        New Table tab
+      </button>
+      <button
+        mat-menu-item
+        (click)="onMenuClick('Dashboard', 'dashboard', AppFeature.Dashboard)"
+      >
+        New Dashboard tab
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>

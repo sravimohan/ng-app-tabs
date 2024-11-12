@@ -1,0 +1,19 @@
+<div class="tab-bar">
+  <ul>
+    <li
+      tabindex="0"
+      class="tab-item"
+      *ngFor="let tab of state.tabs()"
+      (click)="selectTab(tab)"
+      (keydown.enter)="selectTab(tab)"
+      [ngClass]="{ active: isCurrentRoute(tab) }">
+      <span>{{ tab.label }}</span>
+      <mat-icon
+        *ngIf="isCurrentRoute(tab)"
+        fontIcon="close"
+        tabindex="0"
+        (keydown.enter)="closeTab(tab); $event.stopPropagation()"
+        (click)="closeTab(tab); $event.stopPropagation()"></mat-icon>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 8px solid #450a0a;
+  background-color: #fee2e2;
+}
+
+.main {
+  flex: 1;
+  overflow: auto;
+  padding: 30px;
+}
