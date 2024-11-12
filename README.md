@@ -4,6 +4,7 @@ This example demostrates the example of creating application level tabs by using
 
 - Each tab is treated as a route
 - The tab state is maintained by implementing RouteReuseStrategy and persisting state in a signal store
+- Ability to open each tab type mulitple times, simultaneously by using a context slug in the route.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
 
